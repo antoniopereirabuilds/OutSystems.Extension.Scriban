@@ -108,7 +108,7 @@ Hi Ana, you have 3 items:
 ## Technical Details
 
 - **Library:** [Scriban](https://www.nuget.org/packages/Scriban) v7.2.4
-- **Target:** .NET 8.0, linux-x64 (framework-dependent)
+- **Targets:** .NET 8.0 and .NET 10.0 (multi-target), linux-x64 (framework-dependent)
 - **ODC SDK:** `OutSystems.ExternalLibraries.SDK` v1.5.0
 - **License:** BSD-3-Clause
 
@@ -124,7 +124,7 @@ dotnet test OutSystems.Scriban.UnitTests/OutSystems.Scriban.UnitTests.csproj -c 
 
 ```bash
 dotnet publish OutSystems.Scriban/OutSystems.Scriban.csproj \
-  -c Release -r linux-x64 --self-contained false -o ./publish
+  -c Release -f net10.0 -r linux-x64 --self-contained false -o ./publish
 cd ./publish && zip -r ../Scriban_Asset.zip . && cd ..
 ```
 
