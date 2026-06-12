@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>OutSystems.Scriban</RootNamespace>
+    <AssemblyName>OutSystems.Scriban</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\Scriban_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.5.0" />
+    <PackageReference Include="Scriban" Version="7.2.4" />
+  </ItemGroup>
+
+</Project>
